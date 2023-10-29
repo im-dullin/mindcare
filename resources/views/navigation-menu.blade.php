@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-mark class="block h-9 w-auto" />
+                        <!-- <x-application-mark class="block h-9 w-auto" /> -->
+                        <img class="h-8 w-auto" src="{{ asset('images/logo.png') }}" alt="">
                     </a>
                 </div>
             </div>
@@ -187,7 +188,7 @@
                     @csrf
 
                     <x-responsive-nav-link href="{{ route('logout') }}"
-                                   @click.prevent="$root.submit();">
+                                    @click.prevent="$root.submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>MindCare</title>
+        <title>MindBridge</title>
         <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Fonts -->
@@ -22,9 +22,9 @@
                 <header class="absolute inset-x-0 top-0 z-50">
                     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                         <div class="flex lg:flex-1">
-                            <a href="#" class="-m-1.5 p-1.5">
+                            <a href="{{ url('/') }}" class="-m-1.5 p-1.5">
                             <span class="sr-only">Your Company</span>
-                            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                            <img class="h-8 w-auto" src="{{ asset('images/logo.png') }}" alt="">
                             </a>
                         </div>
                         <div class="flex lg:hidden">
@@ -36,10 +36,10 @@
                             </button>
                         </div>
                         <div class="hidden lg:flex lg:gap-x-12">
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">How to use?</a>
+                            <a href="{{ url('/company') }}" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+                            <a href="{{ url('/features') }}" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                            <a href="{{ url('/contact') }}" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+                            <a href="{{ url('/faq') }}" class="text-sm font-semibold leading-6 text-gray-900">FAQs?</a>
                         </div>
                         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                             @if (Route::has('login'))
